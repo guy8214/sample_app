@@ -19,6 +19,15 @@ describe User do
   end
     
   subject {@user}
+  
+  it {should respond_to(:admin)}
+  
+  it {should respond_to(:authenticate)}
+  
+  it {should be_valid}
+  
+  it {should_not be_admin}
+  
 
   it{ should respond_to(:name)}
 
